@@ -6,7 +6,7 @@ To design a client-server architecture in which a server sends multiple "types o
 
 ## How to run Scripts
 
-### Prerequisites installed
+### Prerequisites to be installed
 1. Docker 
 2. Node js
 
@@ -16,9 +16,9 @@ To design a client-server architecture in which a server sends multiple "types o
 3. Similarly go to attivo-client directory and run ./run-client.sh . This will start client side socket and connections will be established between the server and client.
 4. All the necessary dependencies will be installed by running the above scripts.
 
-Port 3000 : webSocketServer , 
-Port 5000 : server , 
-Port 8081 : mongoserver 
+Port 3000 : webSocketServer <br/>
+Port 5000 : server <br/>
+Port 8081 : mongoserver <br/>
 
 ### Design write up
 1. Used Web sockets to connect server to several Clients. Created Another web server to serve the requests from client and update the mongo database.
@@ -58,9 +58,9 @@ Seperating servers achieve
 
 
 ### Libraries/Framework Used 
-Websocket 
-Express 
-Axios 
-MongoDB
-ps-list
-node-disk-info
+Websocket <br/>
+Express <br/>
+Axios <br/>
+MongoDB<br/>
+ps-list<br/>
+node-disk-info<br/>
