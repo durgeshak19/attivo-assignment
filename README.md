@@ -15,6 +15,7 @@ To design a client-server architecture in which a server sends multiple "types o
 2. Go to the attivo-server directory in terminal and run bash file using ./run-server.sh. This will start Mongo server [in docker] ,routing server and websocket server in your system.
 3. Similarly got to attivo-client directory and run ./run-client.sh . This will start client side socket and connections will be established between the server and client.
 4. All the necessary dependencies will be installed by running the above scripts.
+
 Port 3000 : webSocketServer
 Port 5000 : server
 Port 8081 : mongoserver
