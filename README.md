@@ -34,22 +34,32 @@ c. Used Docker to make a shippable product as asked. In application Docker also 
 
 d. Used Express js as a backend framework for faster application development.
 
+### Working
 
-###Libraries/Framework Used 
-Websocket 
-Express 
-Axios 
-MongoDB
-ps-list
-node-disk-info
+1. webSocketServer.js creates a websocket it logs whenever a new cient is connected. A timer (interval 1 minutes) has been setup to ping all the connected clients and requests their data.
+2. when client gets a ping request it logs the current number of requests and call the functions to serve OS details to server.
+ ##### Caching
+  A caching mechanism checks if there is any error on sending the requests and       loops every minutes until particular request is served. 
+  To acheive a true Cache a STACK could be used to save unserviced requests and     when connections is re-established pop the stored requests.
+3. Client intitiates POST request to server on different URLs for the server to    catch .
+4. Routing Server then stores the requested data and stores into database based on their types.
+
 
 ### Technical Difficulties faced 
 1. Connecting large no of clients cant be done using simple Client-server architecture. So learned fundamentals of Websockets from Scratch and implemented it.
-2. Running mongo client in local machine constantly failing to establish connection on ports.
+2. Running mongo client in local machine constantly failing to establish connection on ports and on Atlas Cloud.
 3. Used Dockers to make a shippable product as asked in the assignment therefore again learning from scratch. 
 
 
 ### Brownie Points Acheived
 1. Can be run into Windows and Linux as used technologies [Node js ,docker] readily runnable on both systems.
 2. Can be easily scaled up to 1000+ machines as using websockets permits so. Any host running the Client program can easily connects to the server websocket and then send data on another after every n minutes. Using two servers offloads traffic and further the use of load balancer can also redistribute the Load. 
-3. Code easy to shipped and Deploy because of using Docker.
+
+
+### Libraries/Framework Used 
+Websocket 
+Express 
+Axios 
+MongoDB
+ps-list
+node-disk-info
