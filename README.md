@@ -30,7 +30,7 @@ Seperating servers achieve
 
 b. Used MongoDB database as there is no relation between data and storing into mongo collections is easier as client sends JSON data , which directly can be saved into a NoSql database.
 
-c. Used Docker to make a shippable product as asked. In application Docker also used to solve MongoDB connection and configuration problems as encountered during development.
+c. Used Docker to make a shippable product as asked. In current application docker is also used to solve MongoDB connection and configuration problems as encountered during development.
 
 d. Used Express js as a backend framework for faster application development.
 
